@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="button" value="button1" onclick="alert('wahaha!')">
+	<input type="button" value="button2" onclick="alert('Hellow  word')">
+	<input type="button" value="blue" onclick="document.body.style.background='blue'">
+	<input type="button" value="yellow" onclick="document.body.style.background='yellow'">
+	<script>
+		var now=new Data();
+		var hour=now.getHours();
+		if (hour<12) 
+			document.write("<h1>Good Morning, ");
+		if (hour>=12) {
+			hour=hour-12;
+			if (hour<6) 
+				document.write("<h1>Good Afternoon, ");
+			if (hour>=6)
+				document.write("<h1>Good Evening, ");
+		}
+		var name;
+		name=window.prompt("Please enter your name")
+		document.writeln(name+",welcome to Javascript programming!</h1>");
+	</script>
+	<script type="text/javascript">
+		var a,b,num1,num2;
+		a=window.prompt("Enter first integer")
+		b=window.prompt("Enter second integer")
+		num1=parseInt(a);
+		num2=parseInt(b);
+		var sum=num1+num2;
+		document.writeln("<p>The sum is "+sum+"</p>")
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework</title>
+</head>
+<body>
+	<script>
+		var rand=Math.floor((Math.random()*10)+1);
+		var input1=window.prompt("Please enter a number between 1~10");
+		while(rand!=input1){
+			input1=guess();
+			}
+		if (rand==input1){
+			confirm("Bingo! The anwser is "+rand);
+		}
+		function guess(){
+			return input1=window.prompt("Please guess another number");
+		}
+	</script>
+</body>
+</html>
